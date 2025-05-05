@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Related YouTube Videos</title>
+</head>
+<body>
+    <h2>Search Query: {{ query }}</h2>
+    <h3>Top Videos:</h3>
+    <ul>
+        {% for video in videos %}
+            <li><a href="{{ video.url }}" target="_blank">{{ video.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Upload</a>
+</body>
+</html>
